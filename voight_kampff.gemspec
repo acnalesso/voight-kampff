@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.version       = VoightKampff::VERSION.dup
   s.platform      = Gem::Platform::RUBY.dup
   s.files         = `git ls-files`.split("\n")
-  s.files.reject! { |fn| fn.match(/\.travis.yml/) }
+  s.files.reject! { |fn| fn.match(/\.travis.yml\.gitignore/) }
   s.test_files    = `git ls-files -- {tests}/**/*`.split("\n")
   s.require_path  = 'lib'
 
